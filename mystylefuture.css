@@ -109,7 +109,7 @@ h2 {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
         padding: 0;
     }
 
@@ -138,6 +138,12 @@ h2 {
 
     .poster {
         height: 150px;
+    }
+    .Home, .MyJourney, .MyFuture {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: 'Pirate';
+        line-height: 3.5;
     }
 }
 
