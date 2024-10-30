@@ -119,10 +119,8 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Media Queries for Responsive Design */
-
-/* สำหรับมือถือ (ความกว้างน้อยกว่า 768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px)
+ {
     body {
         padding: 10px;
     }
@@ -182,7 +180,7 @@ nav ul li a:hover {
     }
 }
 
-/* สำหรับเดสก์ท็อป (ความกว้างมากกว่า 1024px) */
+
 @media (min-width: 1024px) {
     .poster {
         width: 650px;
@@ -208,6 +206,89 @@ nav ul li a:hover {
         margin-left: 15%;
     }
 }
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
 
+    .header {
+        font-size: 2em;
+    }
+
+    .subheading, .name, .alias, .price {
+        font-size: 1.2em;
+    }
+
+    .prices {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    #mugshot {
+        max-width: 200px;
+    }
+
+    nav {
+        position: relative;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .poster {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+    #mugshot {
+        max-width: 220px;
+    }
+
+    .poster {
+        width: 80%;
+    }
+}
+@media (min-width: 1024px) {
+    .poster {
+        width: 650px;
+    }
+
+    nav {
+        width: 15%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    .content {
+        margin-left: 15%;
+    }
+}
 
 
