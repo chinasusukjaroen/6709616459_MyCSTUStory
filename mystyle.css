@@ -1,322 +1,122 @@
-@font-face {
+@@font-face {
     font-family: 'Pirate';
     src: url('resources/jack.ttf') format('truetype');
 }
 
-
-body
-{ 
+body {
+    font-family: 'Pirate', sans-serif;
     background-image: url(resources/wall.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-  
     padding: 20px;
-
+    margin: 0;
 }
-.poster
-{
-   background-image: url(resources/paper.jpg);
-   
-   width: 650px;
-   height: 1800px;
-   padding: 20px;
-   text-align: center;
-   display: block;
-   margin: auto;
-     
-  
+.poster {
+    background-image: url(resources/paper.jpg);
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
 }
 
-
-
-#mugshot
-
-{
-width: 250x;
-height: 300px;
-
+#mugshot {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
 
 .bordered-image {
-    border: 5px solid #291200; 
-    padding: 10px; 
+    border: 5px solid #291200;
+    padding: 10px;
     text-align: center;
-    
 }
 
-
-.header
-{
-    font-size: 45px;
-    font-family: 'Pirate';
+.header {
+    font-size: 3em;
     color: red;
-
-
 }
 
-.subheading
-{
-  font-size: 25px;
-  font-weight: bold;
-  font-family: 'Pirate';
-
-  
-
-}
-
-.name
-{
-
-    font-size: 30px;
+.subheading, .name, .alias, .description, .favourite, .price, .prices {
     font-weight: bold;
-    font-family: 'Pirate';
-    
-
-
-
-
 }
 
-.alias
-{
+.subheading {
+    font-size: 1.5em;
+}
 
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Pirate';
+.name {
+    font-size: 1.75em;
+}
+
+.alias {
+    font-size: 1.25em;
     text-decoration: underline;
-    
-
-
 }
 
-
-.description
-
-{
-
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Pirate';
-    color: 	#5e4e0d;
-
-
+.description, .favourite {
+    font-size: 1.1em;
+    color: #5e4e0d;
 }
 
-.Favourite
-{
-
-    
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Pirate';
-    color: 	#5e4e0d;
-
-
+h3 {
+    color: black;
+    text-decoration: underline;
+    font-size: 2em;
 }
 
-h3
-{
-  color: black;
-  text-decoration: underline;
-  font-family: 'Pirate';
-  font-size: 35px;
-
-  
-
+.price {
+    font-size: 1.75em;
 }
 
-.headers
-{
-    font-size: 45px;
-    font-family: 'Pirate';
-    color:red;
-
-
-}
-
-.subheadings
-{
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Pirate';
-
-  
-
-}
-
-.price
-
-{
-
-    
-    font-size: 30px; 
-    font-weight: bold;
-    font-family: 'Pirate';
-
-}
-
-.prices
-
-{
-
-    
-    font-size: 40px; 
-    font-weight: bold;
-    font-family: 'Pirate';
+.prices {
+    font-size: 2em;
     display: inline;
-    position: relative; 
-    text-decoration: underline; 
-    text-decoration-thickness: 3px; 
-    box-shadow: 0 3px  black; 
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    box-shadow: 0 3px black;
 }
 
 nav {
     background-color: #48260d;
-    padding-top:20px ;
+    padding-top: 20px;
     text-align: center;
-    float: left;
-    width: 15%;
-    height: 100vh;
+    width: 100%;
     position: fixed;
-    top: 0px;
-   
+    top: 0;
+    z-index: 1;
 }
 
 nav ul {
-
     list-style: none;
     margin: 0;
     padding: 0;
-   
+    display: flex;
+    justify-content: space-around;
 }
 
-
 nav ul li {
-    display: block;
-    margin:   15px;
+    margin: 15px 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #333;
 }
-.Home
- {
-    line-height: 10;
-    font-size: 20px;
+.home, .my-journey, .my-future {
+    font-size: 1em;
     font-weight: bold;
-    font-family: 'Pirate';
-}
-.MyJourney
- {
-    line-height: 10;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Pirate';
-}
-.MyFuture
- {
-    line-height: 10;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Pirate';
 }
 
-@media (max-width: 768px)
- {
-    body {
-        padding: 10px;
-    }
-
-    .header {
-        font-size: 2em;
-    }
-
-    .subheading, .name, .alias, .price {
-        font-size: 1.2em;
-    }
-
-    .prices {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    #mugshot {
-        max-width: 200px;
-    }
-
-    nav {
-        position: relative;
-        height: auto;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .poster {
-        width: 90%;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 1.75em;
-    }
-
-    #mugshot {
-        max-width: 220px;
-    }
-
-    .poster {
-        width: 80%;
-    }
-}
-
-
-@media (min-width: 1024px) {
-    .poster {
-        width: 650px;
-    }
-
-    nav {
-        width: 15%;
-        height: 100vh;
-        position: fixed;
-        left: 0;
-        top: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 20px 0;
-    }
-
-    .content {
-        margin-left: 15%;
-    }
-}
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -358,7 +158,7 @@ nav ul li a:hover {
     }
 }
 
-
+/* สำหรับแท็บเล็ต (ความกว้าง 768px ถึง 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
         font-size: 2.5em;
@@ -376,6 +176,8 @@ nav ul li a:hover {
         width: 80%;
     }
 }
+
+/* สำหรับเดสก์ท็อป (ความกว้างมากกว่า 1024px) */
 @media (min-width: 1024px) {
     .poster {
         width: 650px;
