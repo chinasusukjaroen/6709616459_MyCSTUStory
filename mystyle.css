@@ -174,14 +174,14 @@ nav ul li a:hover {
       height: auto;
     }
     .Home, .MyJourney, .MyFuture {
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: bold;
         font-family: 'Pirate';
         line-height: 1.5;
     }
 }
 
-/* สำหรับแท็บเล็ต (ความกว้าง 768px ถึง 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .header {
         font-size: 2.5em;
