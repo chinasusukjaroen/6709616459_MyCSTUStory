@@ -1,218 +1,196 @@
 @font-face {
-    font-family: 'Pirate'; /* ตั้งชื่อฟอนต์ */
-    src: url('resources/jack.ttf') format('truetype'); /* ชี้ไปยังไฟล์ฟอนต์ */
+  font-family: 'Pirate'; /* ตั้งชื่อฟอนต์ */
+  src: url('resources/jack.ttf') format('truetype'); /* ชี้ไปยังไฟล์ฟอนต์ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body
-{ 
-    background-image: url(resources/wall.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-  
-    padding: 20px;
+body {
+  background-image: url('resources/wall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Helvetica', sans-serif;
+  padding: 20px;
+  color: #333;
 }
 
+/* Navigation Styles */
 nav {
-    background-color: #48260d;
-    padding-top:20px ;
-    text-align: center;
-    float: left;
-    width: 15%;
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-   
+  background-color: #48260d;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav ul {
-
-    list-style: none;
-    margin: 0;
-    padding: 0;
-   
-}
-
-
-nav ul li {
-    display: block;
-    margin:   15px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+  font-family: 'Pirate';
 }
 
 nav ul li a:hover {
-    color: #333;
+  color: #d4af37;
 }
 
-.Home
-{
-    line-height: 7;
-    font-size: 21px;
-  font-weight: bold;
-  font-family: 'Pirate';
-
-
-}
-.MyJourney
-{
-    line-height: 10;
-    font-size: 21px;
-    font-weight: bold;
-    font-family: 'Pirate';
-
-
-}
-.MyFuture
-{
-    line-height: 10;
-    font-size: 21px;
-    font-weight: bold;
-    font-family: 'Pirate';
-
-
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 20px;
 }
 
-* {
-    box-sizing: border-box;
+/* Vertical Line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container */
+.container {
+  padding: 15px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Align Left and Right */
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+/* Circle Indicators */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border: 4px solid #FF9F55;
+  border-radius: 50%;
+  top: 15px;
+  z-index: 1;
+}
+
+.left::after {
+  right: -13px;
+}
+
+.right::after {
+  left: -13px;
+}
+
+/* Arrows */
+.left::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 30px;
+  border: medium solid #f6e1c3;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f6e1c3;
+}
+
+.right::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  border: medium solid #f6e1c3;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f6e1c3 transparent transparent;
+}
+
+/* Content Box */
+.content {
+  background-color: #f6e1c3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
   }
-  
-  /* Set a background color */
-  body {
-    background-color: #235d3a;
-    font-family: Helvetica, sans-serif;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px;
-    
-  }
-  
-  /* The actual timeline (the vertical ruler) */
+
   .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: red;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-    padding: 5px;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: red;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 20%;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /*ลูกศรซ้าย*/
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #f6e1c3;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #f6e1c3;
-  }
-  
-  /*ลูกศรขวา*/
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #f6e1c3;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #f6e1c3 transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /*กล่องคำพูด*/
-  .content {
-    padding: 10px 20px;
-    background-color: #f6e1c3;
-    position: relative;
-    border-radius: 10px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 400px) {
-  /* Place the timelime to the left */
-    .timeline::after {
       left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
+  }
+
+  .container {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
+  }
+
+  .container.left, .container.right {
+      left: 0;
+  }
+
+  .container::before {
       left: 60px;
-      border: medium solid #f6e1c3;
       border-width: 10px 10px 10px 0;
       border-color: transparent #f6e1c3 transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
   }
+
+  .left::after, .right::after {
+      left: 15px;
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .left::before, .right::before {
+      display: none;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1025px) {
+  .container {
+      width: 50%;
+  }
+
+  .left {
+      left: 0;
+  }
+
+  .right {
+      left: 50%;
+  }
+}
