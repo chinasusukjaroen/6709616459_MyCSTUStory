@@ -1,4 +1,4 @@
-@@font-face {
+@font-face {
     font-family: 'Pirate';
     src: url('resources/jack.ttf') format('truetype');
 }
@@ -37,38 +37,46 @@ body {
 .header {
     font-size: 3em;
     color: red;
+    font-family: 'Pirate';
 }
 
 .subheading, .name, .alias, .description, .favourite, .price, .prices {
     font-weight: bold;
+    font-family: 'Pirate';
 }
 
 .subheading {
     font-size: 1.5em;
+    font-family: 'Pirate';
 }
 
 .name {
     font-size: 1.75em;
+    font-family: 'Pirate';
 }
 
 .alias {
     font-size: 1.25em;
     text-decoration: underline;
+    font-family: 'Pirate';
 }
 
 .description, .favourite {
     font-size: 1.1em;
     color: #5e4e0d;
+    font-family: 'Pirate';
 }
 
 h3 {
     color: black;
     text-decoration: underline;
     font-size: 2em;
+    font-family: 'Pirate';
 }
 
 .price {
     font-size: 1.75em;
+    font-family: 'Pirate';
 }
 
 .prices {
@@ -78,6 +86,7 @@ h3 {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     box-shadow: 0 3px black;
+    font-family: 'Pirate';
 }
 
 nav {
@@ -112,9 +121,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #333;
 }
-.home, .my-journey, .my-future {
-    font-size: 1em;
+.Home, .MyJourney, .MyFuture {
+    font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Pirate';
+    line-height: 9;
 }
 
 @media (max-width: 768px) {
@@ -156,6 +167,12 @@ nav ul li a:hover {
     .poster {
         width: 90%;
     }
+    .video
+    {
+     width: 100%;
+      height: auto;
+
+    }
 }
 
 /* สำหรับแท็บเล็ต (ความกว้าง 768px ถึง 1024px) */
@@ -174,6 +191,12 @@ nav ul li a:hover {
 
     .poster {
         width: 80%;
+    }
+    .video
+    {
+     width: 100%;
+      height: auto;
+
     }
 }
 
@@ -201,6 +224,12 @@ nav ul li a:hover {
 
     .content {
         margin-left: 15%;
+    }
+    .video
+    {
+     width: 100%;
+      height: auto;
+
     }
 }
 
