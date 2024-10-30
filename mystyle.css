@@ -216,6 +216,12 @@ nav ul li a:hover {
         flex-direction: row;
         padding: 0;
     }
+    .Home, .MyJourney, .MyFuture {
+        font-size: 1em;
+        font-weight: bold;
+        font-family: 'Pirate';
+        line-height: 2;
+    }
 }
 
 /* สำหรับเดสก์ท็อป (ความกว้างมากกว่า 1024px) */
@@ -253,7 +259,7 @@ nav ul li a:hover {
         font-size: 1.5em;
         font-weight: bold;
         font-family: 'Pirate';
-        line-height: 5;
+        line-height: 9;
     }
 }
 
