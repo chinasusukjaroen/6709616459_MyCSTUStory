@@ -141,21 +141,41 @@ h2 {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
+    .poster {
+        width: 650px;
+    }
+
     nav {
         width: 15%;
         height: 100vh;
         position: fixed;
+        left: 0;
+        top: 0;
     }
 
     nav ul {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
     }
 
-    main {
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    .content {
         margin-left: 15%;
     }
-}
+    .video
+    {
+     width: 100%;
+      height: auto;
 
+    }
+    .Home, .MyJourney, .MyFuture {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: 'Pirate';
+        line-height: 7;
+    }
+}
 

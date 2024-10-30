@@ -209,6 +209,13 @@ body {
     left: 0%;
   }
 }
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   body {
       padding: 10px;
@@ -249,11 +256,6 @@ body {
   .poster {
       width: 90%;
   }
-  .video
-  {
-   width: 100%;
-    height: auto;
-  }
   .Home, .MyJourney, .MyFuture {
       font-size: 1.1em;
       font-weight: bold;
@@ -278,12 +280,6 @@ body {
 
   .poster {
       width: 80%;
-  }
-  .video
-  {
-   width: 100%;
-    height: auto;
-
   }
 
   nav {
@@ -320,7 +316,7 @@ body {
   }
 
   nav ul {
-      flex-direction: row;
+      flex-direction: column;
   }
 
   nav ul li {
@@ -329,12 +325,6 @@ body {
 
   .content {
       margin-left: 15%;
-  }
-  .video
-  {
-   width: 100%;
-    height: auto;
-
   }
   .Home, .MyJourney, .MyFuture {
       font-size: 1.5em;
