@@ -1,43 +1,39 @@
+/* Font face */
 @font-face {
-    font-family: 'Pirate'; /* ตั้งชื่อฟอนต์ */
-    src: url('resources/jack.ttf') format('truetype'); /* ชี้ไปยังไฟล์ฟอนต์ */
+    font-family: 'Pirate';
+    src: url('resources/jack.ttf') format('truetype');
 }
 
-body
-{ 
+/* Global Styles */
+body {
+    background-color: #1a1a1a;
     background-image: url(resources/wall.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-  
     padding: 20px;
+    margin: 0;
+    font-family: 'Pirate', serif;
 }
 
+/* Navigation Bar */
 nav {
     background-color: #48260d;
-    padding-top:20px ;
     text-align: center;
-    float: left;
-    width: 15%;
-    height: 100vh;
+    width: 100%; 
     position: fixed;
-    top: 0px;
-   
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 nav ul {
-
     list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
     margin: 0;
-    padding: 0;
-   
-}
-
-
-nav ul li {
-    display: block;
-    margin:   15px;
 }
 
 nav ul li a {
@@ -51,237 +47,115 @@ nav ul li a:hover {
     color: #333;
 }
 
-.Home
-{
-    line-height: 7;
-    font-size: 20px;
-  font-weight: bold;
-  font-family: 'Pirate';
-
-
-}
-.MyJourney
-{
-    line-height: 10;
-    font-size: 20px;
-    font-weight: bold;
+/* Header Titles */
+h1, h2 {
     font-family: 'Pirate';
-
-
-}
-.MyFuture
-{
-    line-height: 10;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Pirate';
-
-
+    text-align: center;
+    margin: 10px 0;
 }
 
-h1
-
-{
-    font-size: 45px;
-    font-family: 'Pirate';
+h1 {
+    font-size: 2.5rem;
     color: red;
-    text-align: center;
-
+    text-shadow: 2px 2px 5px black;
 }
 
-.poster
-{
-   background-image: url(resources/paper.jpg);
-   
-   width: 700px;
-   height: 150px;
-   padding: 20px;
-   text-align: center;
-   display: block;
-   margin: auto;
-     
-  
-}
-
-#chest
-
-{
-width: 250x;
-height: 400px;
-text-align: center;
-display: block;
-margin: auto;
-
-}
-
-
-.posters
-{
-   background-image: url(resources/paper.jpg);
-   
-   width: 500px;
-   height: 660px;
-   padding: 20px;
-   text-align: center;
-   display: block;
-   margin: auto;
-     
-  
-}
-
-h2
-
-{
-    font-size: 35px;
-    font-family: 'Pirate';
+h2 {
+    font-size: 2rem;
     color: black;
+    text-shadow: 1px 1px 3px gray;
+}
+
+/* Poster Containers */
+.poster, .posters {
+    background-image: url(resources/paper.jpg);
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
-
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-.skills
-{
+/* Sizes for Poster */
+.poster {
+    max-width: 700px;
+    width: 90%;
+    height: auto;
+}
 
-    font-size: 18px;
+.posters {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+}
+
+/* Chest Image Styling */
+#chest {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Skill List */
+.skills {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
     font-weight: bold;
-    font-family: 'Pirate';
-    color: 	black;
-
+    overflow-y: auto;
 }
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .header {
-        font-size: 2em;
-    }
-
-    .subheading, .name, .alias, .price {
-        font-size: 1.2em;
-    }
-
-    .prices {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
-
-    #mugshot {
-        max-width: 200px;
-    }
-
-    nav {
-        position: relative;
-        height: auto;
-        padding: 10px;
-
-    }
-
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
         padding: 0;
     }
 
-    .poster {
-        width: 90%;
+    .poster, .posters {
+        width: 95%;
     }
-    .video
-    {
-     width: 100%;
-      height: auto;
+
+    h1 {
+        font-size: 2rem;
     }
-    .Home, .MyJourney, .MyFuture {
-        font-size: 1.1em;
-        font-weight: bold;
-        font-family: 'Pirate';
-        line-height: 1.5;
+
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 1.75em;
-    }
-
-    #mugshot {
-        max-width: 220px;
-    }
-
-    .poster {
-        width: 80%;
-    }
-    .video
-    {
-     width: 100%;
-      height: auto;
-
-    }
- 
-    nav {
-        position: relative;
-        height: auto;
-        padding: 10px;
-
-    }
-
+@media (min-width: 769px) and (max-width: 1024px) {
     nav ul {
         flex-direction: row;
-        padding: 0;
+        justify-content: space-between;
     }
-    .Home, .MyJourney, .MyFuture {
-        font-size: 1.5em;
-        font-weight: bold;
-        font-family: 'Pirate';
-        line-height: 3.5;
+
+    #chest {
+        max-width: 300px;
+    }
+
+    .poster {
+        height: 150px;
     }
 }
 
-/* สำหรับเดสก์ท็อป (ความกว้างมากกว่า 1024px) */
-@media (min-width: 1024px) {
-    .poster {
-        width: 650px;
-    }
-
+@media (min-width: 1025px) {
     nav {
         width: 15%;
         height: 100vh;
         position: fixed;
-        left: 0;
-        top: 0;
     }
 
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
-    nav ul li {
-        margin: 20px 0;
-    }
-
-    .content {
+    main {
         margin-left: 15%;
     }
-    .video
-    {
-     width: 100%;
-      height: auto;
-
-    }
-    .Home, .MyJourney, .MyFuture {
-        font-size: 1.5em;
-        font-weight: bold;
-        font-family: 'Pirate';
-        line-height: 7;
-    }
 }
-
 
 
