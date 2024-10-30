@@ -3,120 +3,225 @@
     src: url('resources/jack.ttf') format('truetype');
 }
 
-body {
-    font-family: 'Pirate', sans-serif;
+
+body
+{ 
     background-image: url(resources/wall.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+  
     padding: 20px;
-    margin: 0;
+
+}
+.poster
+{
+   background-image: url(resources/paper.jpg);
+   
+   width: 650px;
+   height: 1800px;
+   padding: 20px;
+   text-align: center;
+   display: block;
+   margin: auto;
+     
+  
 }
 
-.poster {
-    background-image: url(resources/paper.jpg);
-    width: 100%;
-    max-width: 650px;
-    padding: 20px;
-    text-align: center;
-    margin: auto;
-}
 
-#mugshot {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
+
+#mugshot
+
+{
+width: 250x;
+height: 300px;
+
 }
 
 .bordered-image {
-    border: 5px solid #291200;
-    padding: 10px;
+    border: 5px solid #291200; /* กำหนดความหนา, ประเภท, และสีของเส้นขอบ */
+    padding: 10px; /* ระยะห่างระหว่างเส้นขอบกับภาพ */
     text-align: center;
+    
 }
 
-.header {
-    font-size: 3em;
+
+.header
+{
+    font-size: 45px;
+    font-family: 'Pirate';
     color: red;
+
+
 }
 
-.subheading, .name, .alias, .description, .favourite, .price, .prices {
+.subheading
+{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Pirate';
+
+  
+
+}
+
+.name
+{
+
+    font-size: 30px;
     font-weight: bold;
+    font-family: 'Pirate';
+    
+
+
+
+
 }
 
-.subheading {
-    font-size: 1.5em;
-}
+.alias
+{
 
-.name {
-    font-size: 1.75em;
-}
-
-.alias {
-    font-size: 1.25em;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Pirate';
     text-decoration: underline;
+    
+
+
 }
 
-.description, .favourite {
-    font-size: 1.1em;
-    color: #5e4e0d;
+
+.description
+
+{
+
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Pirate';
+    color: 	#5e4e0d;
+
+
 }
 
-h3 {
-    color: black;
-    text-decoration: underline;
-    font-size: 2em;
+.Favourite
+{
+
+    
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Pirate';
+    color: 	#5e4e0d;
+
+
 }
 
-.price {
-    font-size: 1.75em;
+h3
+{
+  color: black;
+  text-decoration: underline;
+  font-family: 'Pirate';
+  font-size: 35px;
+
+  
+
 }
 
-.prices {
-    font-size: 2em;
+.headers
+{
+    font-size: 45px;
+    font-family: 'Pirate';
+    color:red;
+
+
+}
+
+.subheadings
+{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Pirate';
+
+  
+
+}
+
+.price
+
+{
+
+    
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Pirate';
+
+}
+
+.prices
+
+{
+
+    
+    font-size: 40px; 
+    font-weight: bold;
+    font-family: 'Pirate';
     display: inline;
-    position: relative;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    box-shadow: 0 3px black;
+    position: relative; 
+    text-decoration: underline; 
+    text-decoration-thickness: 3px; 
+    box-shadow: 0 3px  black; 
 }
 
 nav {
     background-color: #48260d;
-    padding-top: 20px;
+    padding-top:20px ;
     text-align: center;
-    width: 100%;
+    float: left;
+    width: 15%;
+    height: 100vh;
     position: fixed;
-    top: 0;
-    z-index: 1;
+    top: 0px;
+   
 }
 
 nav ul {
+
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
+   
 }
 
+
 nav ul li {
-    margin: 15px 0;
+    display: block;
+    margin:   15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #333;
 }
-
-.home,
-.my-journey,
-.my-future {
+.Home
+ {
+    line-height: 10;
+    font-size: 20px;
+    font-weight: bold;
+}
+.MyJourney
+ {
+    line-height: 10;
+    font-size: 20px;
+    font-weight: bold;
+}
+.MyFuture
+ {
     line-height: 10;
     font-size: 20px;
     font-weight: bold;
