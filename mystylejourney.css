@@ -242,7 +242,7 @@ body {
   }
 
   nav ul {
-      flex-direction: column;
+      flex-direction: row;
       padding: 0;
   }
 
@@ -294,7 +294,7 @@ body {
   }
 
   nav ul {
-      flex-direction: column;
+      flex-direction: row;
       padding: 0;
   }
   .Home, .MyJourney, .MyFuture {
@@ -320,7 +320,7 @@ body {
   }
 
   nav ul {
-      flex-direction: column;
+      flex-direction: row;
   }
 
   nav ul li {
