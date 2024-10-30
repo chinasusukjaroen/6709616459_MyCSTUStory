@@ -174,10 +174,10 @@ nav ul li a:hover {
       height: auto;
     }
     .Home, .MyJourney, .MyFuture {
-        font-size: 1.5em;
+        font-size: 0.5em;
         font-weight: bold;
         font-family: 'Pirate';
-        line-height: 2;
+        line-height: 1.5;
     }
 }
 
@@ -204,12 +204,7 @@ nav ul li a:hover {
       height: auto;
 
     }
-    .Home, .MyJourney, .MyFuture {
-        font-size: 1.5em;
-        font-weight: bold;
-        font-family: 'Pirate';
-        line-height: 2;
-    }
+ 
     nav {
         position: relative;
         height: auto;
@@ -258,7 +253,7 @@ nav ul li a:hover {
         font-size: 1.5em;
         font-weight: bold;
         font-family: 'Pirate';
-        line-height: 2;
+        line-height: 5;
     }
 }
 
