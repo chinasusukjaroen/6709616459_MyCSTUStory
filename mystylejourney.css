@@ -196,51 +196,23 @@ body {
 
 
 @media (max-width: 768px) {
-  /* Padding adjustments */
   body {
       padding: 10px;
-      padding-top: 60px; /* Leave space for the fixed header */
   }
 
-  /* Fixed Header */
-  nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 50px; /* Adjust as needed */
-      background-color: #48260d;
-      z-index: 1000;
-  }
-
-  nav ul {
-      display: flex;
-      justify-content: space-around;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-  }
-
-  nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1em; /* Adjusted size */
-      font-weight: bold;
-      font-family: 'Pirate';
-  }
-
-  /* Header size */
   .header {
       font-size: 2em;
-      margin-top: 60px; /* Adjusted for header space */
   }
 
-  /* Text and image size adjustments */
   .subheading, .name, .alias, .price {
       font-size: 1.2em;
   }
 
-  .prices, h3 {
+  .prices {
+      font-size: 1.5em;
+  }
+
+  h3 {
       font-size: 1.5em;
   }
 
@@ -248,29 +220,25 @@ body {
       max-width: 200px;
   }
 
-  /* Footer adjustments */
   footer {
-      width: 100%;
       position: relative;
-      bottom: 0;
-      padding: 8px;
-      text-align: center;
+      height: auto;
+      padding: 10px;
+
   }
 
   footer ul {
-      flex-direction: row;
+      flex-direction: column;
       padding: 0;
   }
 
-  /* Poster width */
   .poster {
       width: 90%;
   }
-
-  /* Responsive font size for nav items */
   .Home, .MyJourney, .MyFuture {
-      font-size: 1em; /* Corrected from 1gem to 1em */
+      font-size: 1.1em;
       font-weight: bold;
+      font-family: 'Pirate';
       line-height: 1.5;
   }
 }
