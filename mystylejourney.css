@@ -51,32 +51,11 @@ footer ul li a:hover {
   color: #333;
 }
 
-.Home
-{
-  line-height: 7;
-  font-size: 20px;
-font-weight: bold;
-font-family: 'Pirate';
-
-
-}
-.MyJourney
-{
-  line-height: 10;
-  font-size: 20px;
+.Home, .MyJourney, .MyFuture {
+  font-size: 1.5em;
   font-weight: bold;
   font-family: 'Pirate';
-
-
-}
-.MyFuture
-{
-  line-height: 10;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Pirate';
-
-
+  line-height: 9;
 }
 
 * {
@@ -249,7 +228,7 @@ body {
   }
 
   footer ul {
-      flex-direction: row;
+      flex-direction: column;
       padding: 0;
   }
 
@@ -291,7 +270,7 @@ body {
 
   footer ul {
       flex-direction: row;
-      padding: 0;
+     
   }
   .Home, .MyJourney, .MyFuture {
       font-size: 1.5em;
@@ -327,9 +306,9 @@ body {
       margin-left: 15%;
   }
   .Home, .MyJourney, .MyFuture {
-      font-size: 1.5em;
+      font-size: 1.2em;
       font-weight: bold;
       font-family: 'Pirate';
-      line-height: 7;
+      line-height: 9;
   }
 }
