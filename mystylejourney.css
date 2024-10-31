@@ -221,11 +221,13 @@ body {
   }
 
   footer {
-      position: relative;
-      height: auto;
-      padding: 8px;
-
-  }
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 8px;
+    text-align: center;
+    height: auto;
+}
 
   footer ul {
       flex-direction: row;
@@ -236,7 +238,7 @@ body {
       width: 90%;
   }
   .Home, .MyJourney, .MyFuture {
-      font-size: 1em;
+      font-size: 1gem;
       font-weight: bold;
       font-family: 'Pirate';
       line-height: 1.5;
@@ -262,11 +264,14 @@ body {
   }
 
   footer {
-      position: relative;
-      height: auto;
-      padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    height: auto;
 
-  }
+}
 
   footer ul {
       flex-direction: row;
