@@ -130,6 +130,12 @@ h2 {
     h2 {
         font-size: 1.5rem;
     }
+    .Home, .MyJourney, .MyFuture {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Pirate';
+        line-height: 1.5;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
